@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Associação em Libras</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header-institucional">
+        <h1 class="titulo-jogo">Jogo de Associação em Libras</h1>
+    </header>
+
+    <button id="resetButton" class="reset-button">Reiniciar Jogo</button>
+
+    <div class="container">
+        <div class="videos-container">
+            <div class="video-target" data-command="video1">
+                <video src="videos_comandos/video1/comando1.mp4" loop></video>
+            </div>
+            
+            <div class="video-target" data-command="video2">
+                <video src="videos_comandos/video2/comando2.mp4" loop></video>
+            </div>
+        </div>
+
+        <div id="congratsVideo" class="congrats-container">
+            <video src="parabens.mp4" class="congrats-video" loop></video>
+        </div>
+
+        <div class="images-container">
+            <img src="imagens/imagem_video1/1.JPEG" draggable="true" data-match="video1" class="draggable-image">
+            <img src="imagens/imagem_video1/2.jpg" draggable="true" data-match="video1" class="draggable-image">
+            <img src="imagens/imagem_video1/3.jpg" draggable="true" data-match="video1" class="draggable-image">
+            <img src="imagens/imagem_video1/4.JPEG" draggable="true" data-match="video1" class="draggable-image">
+            <img src="imagens/imagem_video2/a.jpg" draggable="true" data-match="video2" class="draggable-image">
+            <img src="imagens/imagem_video2/b.jpg" draggable="true" data-match="video2" class="draggable-image">
+            <img src="imagens/imagem_video2/c.jpg" draggable="true" data-match="video2" class="draggable-image">
+            <img src="imagens/imagem_video2/d.jpg" draggable="true" data-match="video2" class="draggable-image">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
